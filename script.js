@@ -9,16 +9,32 @@ let arr = [
   
   function PrintDeveloper() {
     //Write your code here , just console.log
-    arr.forEach((employee)=>console.log(employee));
+    arr.forEach((employee)=>{
+        if (employee.profession=='developer'){
+        console.log(employee)
+    };
+});
 
   }
   
   function addData() {
     //Write your code here, just console.log
+    let temp_name = prompt("enter name");
+    let temp_age = prompt("enter age");
+    let temp_profession = prompt("enter profession");
+    arr.push(
+        {
+            name:temp_name,
+            age:parseInt(temp_age),
+            profession:temp_profession,
+        }
+    )
+    console.log(arr);
   }
   
   function removeAdmin() {
     //Write your code here, just console.log
+
   }
   
   function concatenateArray() {
