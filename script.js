@@ -33,12 +33,23 @@ let arr = [
   }
   
   function removeAdmin() {
-    //Write your code here, just console.log
+    //Write your code here, just console.log;
+    let updatedarr = arr.filter((employee)=>employee.profession != "admin");
+    console.log(updatedarr);
+    arr=updatedarr;
 
   }
   
   function concatenateArray() {
     //Write your code here, just console.log
+    let extra_arr=[
+        { id: 1, name: 'ram', age: 18, profession: 'developer' },
+        { id: 2, name: 'ahmed', age: 20, profession: 'developer' },
+        { id: 3, name: 'karen', age: 19, profession: 'admin' },
+      ];
+      
+     let joined_arr=arr.concat(extra_arr);
+     console.log(arr);
   }
   
   // Here is an example of how functions work,
